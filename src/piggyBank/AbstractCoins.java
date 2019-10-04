@@ -18,7 +18,7 @@ public abstract class AbstractCoins
 
     public double getAddCoins(){
         //getter
-        return getValue() * quantity;
+        return getValue() * getQuantity();
     }
 
 
@@ -53,7 +53,7 @@ public abstract class AbstractCoins
     public String toString()
     {
         // return "Coins{" + " name: " + name + " value: " + getValue() + " addCoin: " + getAddCoins();
-        return getQuantity() + " " + getName();
+        return "Depositing: " + getQuantity() + " " + getName();
     }
 }
 
